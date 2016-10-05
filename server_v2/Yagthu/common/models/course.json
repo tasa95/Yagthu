@@ -1,0 +1,51 @@
+{
+  "name": "Course",
+  "plural": "Course",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mongodb": {
+    "collection": "Course"
+  },
+  "properties": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
+    "Occured": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "attendance": {
+      "type": "hasMany",
+      "model": "attendance",
+      "foreignKey": ""
+    },
+    "Document": {
+      "type": "hasMany",
+      "model": "Document",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": []
+}

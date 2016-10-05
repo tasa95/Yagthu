@@ -1,0 +1,84 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mongodb_dev",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "mongodb_dev",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongodb_dev",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongodb_dev",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mongodb_dev",
+    "public": false
+  },
+  "attendance": {
+    "dataSource": "mongodb_dev",
+    "public": true
+  },
+  "classRoom": {
+    "dataSource": "mongodb_dev",
+    "public": true
+  },
+  "discipline": {
+    "dataSource": "mongodb_dev",
+    "public": true
+  },
+  "grades": {
+    "dataSource": "mongodb_dev",
+    "public": true
+  },
+  "user": {
+    "dataSource": "mongodb_dev",
+    "public": true
+  },
+  "Class": {
+    "dataSource": "mongodb_dev",
+    "public": true
+  },
+  "Course": {
+    "dataSource": "mongodb_dev",
+    "public": true
+  },
+  "Document": {
+    "dataSource": "mongodb_dev",
+    "public": true
+  },
+  "Smartphone": {
+    "dataSource": "mongodb_dev",
+    "public": true
+  },
+  "Photos": {
+    "dataSource": "mongodb_dev",
+    "public": true
+  },
+  "photos_amazon": {
+    "dataSource": "amazon",
+    "public": true
+  },
+  "document_amazon": {
+    "dataSource": "amazon",
+    "public": true
+  }
+}

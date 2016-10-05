@@ -1,0 +1,14 @@
+
+User
+{
+    "_id" :
+    "name" : String
+    "firstName" : String
+    "iDPhoto" : String
+    "password" : String
+    "Class" : String
+    "login" : String
+    "Professor" : Boolean
+    "admin" : Boolean
+    "token" : String
+}

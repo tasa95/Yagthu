@@ -1,0 +1,76 @@
+{
+  "name": "user",
+  "plural": "user",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mongodb": {
+    "collection": "User"
+  },
+  "properties": {
+    "Smartphone_id": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "Login": {
+      "type": "string"
+    },
+    "Admin": {
+      "type": "boolean",
+      "required": true
+    },
+    "Professor": {
+      "type": "boolean",
+      "required": true
+    },
+    "PhotosName": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "attendance": {
+      "type": "hasMany",
+      "model": "attendance",
+      "foreignKey": ""
+    },
+    "Discipline": {
+      "type": "hasMany",
+      "model": "discipline",
+      "foreignKey": ""
+    },
+    "grades": {
+      "type": "hasMany",
+      "model": "grades",
+      "foreignKey": ""
+    },
+    "photos": {
+      "type": "hasOne",
+      "model": "Photos",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "Allow"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": []
+}

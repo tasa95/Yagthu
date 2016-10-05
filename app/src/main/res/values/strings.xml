@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">YAGTHU</string>
+
+    <!-- /////// SECTIONS /////// -->
+    <string name="section_documents_list">Documents</string>
+    <string name="section_user_login">Connexion</string>
+    <string name="section_user_profile">Mon profil</string>
+    <string name="section_user_camera">Ma photo</string>
+    <string name="section_about">A propos</string>
+    <string name="section_params">Paramètres</string>
+
+    <!-- /////// ACTIONS / EDIT /////// -->
+    <string name="action_check">-</string>
+    <string name="action_login">Vous n\'êtes pas enregistré. Merci de vous connecter avec vos identifiants MyGES.</string>
+    <string name="edit_login">Identifiant</string>
+    <string name="edit_pass">Mot de passe</string>
+    <string name="action_signin">Se connecter</string>
+
+    <!-- /////// PARAMS /////// -->
+    <string name="preferences_title_archives">Documents</string>
+    <string name="preferences_subtitle_archives">Archiver les documents</string>
+    <string name="preferences_content_archives">Enregistrer automatiquement les documents </string>
+    <string name="preferences_subtitle_archives_path">Dossier des téléchargement</string>
+    <string name="preferences_content_archives_path">Stockés dans le dossier : ~/sdcard/MyGES/</string>
+    <string name="preferences_title_info">Informations</string>
+    <string name="preferences_subtitle_info_version">Version de l\'application</string>
+    <string name="preferences_subtitle_about">A propos de YAGTHU</string>
+    <string name="preferences_content_about">Comment ça marche ? YAGTHU, Pourquoi ?</string>
+
+    <!-- /////// ACCOUNT MANAGEMENT /////// -->
+    <string name="account_section_login">Mon compte</string>
+    <string name="account_login">Login</string>
+    <string name="account_email">E-mail</string>
+    <string name="account_password">Mot de passe</string>
+
+    <string name="account_section_personal">Mes informations personnelles</string>
+    <string name="account_id_student">N° étudiant</string>
+    <string name="account_title">Civilité</string> <!-- spinner -->
+    <string name="account_firstname">Prénom</string>
+    <string name="account_lastname">Nom</string>
+    <string name="account_birth_date">Date de naissance</string>
+    <string name="account_nationality">Nationalité</string> <!-- spinner -->
+    <string name="account_birth_city">Ville de naissance</string>
+    <string name="account_birth_country">Pays de naissance</string> <!-- spinner -->
+    <string name="account_address">Adresse</string>
+    <string name="account_address_2">Adresse suite (optionnel)</string>
+    <string name="account_city">Ville</string>
+    <string name="account_zip_code">Code postal</string>
+    <string name="account_country">Pays</string> <!-- spinner -->
+    <string name="account_phone_number">Téléphone fixe (optionnel)</string>
+    <string name="account_cellphone_number">Portable (optionnel)</string>
+    <string name="account_ine_number">Numéro INE (optionnel)</string>
+
+    <!-- /////// PROFILE VIEWPAGER TITLES /////// -->
+    <string name="viewpager_title_semester_one">Semestre 1</string>
+    <string name="viewpager_title_semester_two">Semestre 2</string>
+    <string name="viewpager_title_attendance">Absences</string>
+
+    <!-- /////// CONTENT DESCRIPTION /////// -->
+    <string name="content_description_user_avatar">image user</string>
+    <string name="content_description_ges">GES (Grandes Ecoles Supérieures)</string>
+    <string name="content_description_esgi">ESGI (Ecole Supérieure de Génie Informatique)</string>
+    <string name="host_service_desc">NFC HOST TEST APDU</string>
+
+    <!-- /////// ERROR /////// -->
+    <string name="error_crash_report">Une erreur a provoqué le crash de l\'application. Envoyer un rapport aux développeurs pour qu\'il puisse corriger ce problème.</string>
+</resources>

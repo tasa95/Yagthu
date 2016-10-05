@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="80dip" android:layout_height="80dip"
+        android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dip" android:layout_marginTop="15dip"
+        android:layout_marginRight="15dip" android:layout_marginBottom="15dip"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/content_description_user_avatar"/>
+
+    <ImageView
+        android:id="@+id/user_manage_account"
+        android:layout_width="40dip" android:layout_height="40dip"
+        android:layout_alignParentRight="true" android:layout_alignParentTop="true"
+        android:layout_marginTop="35dip" android:layout_marginRight="15dip"
+        android:src="@drawable/icon_manage"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content" android:layout_height="80dip"
+        android:layout_alignParentTop="true" android:layout_toRightOf="@id/user_avatar"
+        android:layout_toLeftOf="@id/user_manage_account"
+        android:layout_marginTop="15dip" android:layout_marginRight="15dip"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_firstname"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/dark" android:textSize="20sp"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/user_lastname"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/dark" android:textSize="16sp"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/user_promotion"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="14sp"
+            android:ellipsize="end" android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/user_viewpager"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_below="@id/user_avatar"
+        android:background="@color/dark_grey">
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/user_viewpager_tab"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingLeft="5dip" android:paddingTop="5dip"
+            android:paddingRight="5dip" android:paddingBottom="2dip"
+            android:textColor="@color/dark_blue"
+            android:layout_gravity="top"
+            android:background="@color/light_opaque_blue" />
+
+        <LinearLayout
+            android:id="@+id/user_content_semester_one"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/transparent">
+
+            <ListView
+                android:id="@+id/user_list_semester_one"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:background="@color/background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_content_semester_two"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent">
+
+            <ListView
+                android:id="@+id/user_list_semester_two"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:background="@color/background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_content_attendance"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent">
+
+            <ListView
+                android:id="@+id/user_list_attendance"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:background="@color/background"/>
+
+        </LinearLayout>
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

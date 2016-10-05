@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="50dip" android:paddingBottom="50dip"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/main_frame_loading"
+        android:layout_width="320dip" android:layout_height="320dip"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:layout_width="90dip" android:layout_height="90dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_ges"/>
+    </RelativeLayout>
+</RelativeLayout>

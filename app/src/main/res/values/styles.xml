@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Yagthu application theme -->
+    <style name="YagthuTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowBackground">@color/background</item>
+
+        <item name="actionBarStyle">@style/YagthuActionBar</item>
+        <item name="android:actionBarStyle">@style/YagthuActionBar</item>
+
+        <item name="colorPrimary">@color/blue</item>
+        <item name="android:colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="android:colorPrimaryDark">@color/dark_blue</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorPrimaryInverse">@color/dark</item>
+        <item name="android:textColorSecondary">@color/dark</item>
+        <item name="android:textColorSecondaryInverse">@color/dark</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+
+    <!-- General ActionBar -->
+    <style name="YagthuActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <!--<item name="android:icon">@drawable/ic_yagthu_logo</item>-->
+        <!--<item name="icon">@drawable/ic_yagthu_logo</item>-->
+        <item name="android:background">@color/blue</item>
+        <item name="background">@color/blue</item>
+    </style>
+
+    <!-- General DropDown -->
+    <style name="YagthuDropDown" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:dividerHeight">1dip</item>
+        <!--<item name="android:listSelector">@drawable/ab_item_background</item>-->
+    </style>
+
+</resources>

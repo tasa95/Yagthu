@@ -1,0 +1,54 @@
+{
+  "name": "grades",
+  "plural": "grades",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mongodb": {
+    "collection": "Grades"
+  },
+  "properties": {
+    "professorName": {
+      "type": "string"
+    },
+    "coef": {
+      "type": "number"
+    },
+    "ects": {
+      "type": "number"
+    },
+    "CC1": {
+      "type": "number"
+    },
+    "CC2": {
+      "type": "number"
+    },
+    "TEST": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "grades": {
+      "type": "number",
+      "required": true
+    },
+    "semester": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": []
+}

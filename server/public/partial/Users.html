@@ -1,0 +1,18 @@
+<div class="container" data-ng-controller="userController" data-ng-init="init()">
+
+    <div class="row">
+
+        <table datatable="" class="row-border hover">
+            <tr>
+                <th ng-repeat="(key, val) in users[0]">{{key}}</th>
+            </tr>
+            <tr ng-repeat="user in users">
+                <td ng-repeat="(key, val) in user">{{val}}</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- etc., more information about the company…. -->
+
+</div>>

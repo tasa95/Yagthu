@@ -1,0 +1,12 @@
+###################################
+#############YAGTHU################
+###################################
+###################################
+###################################
+
+
+WebService :
+2 versions du webService existe . Une sans l'utilisation de l'api strongloop et une sans l'api
+Comme l'api rend difficile l'utilisation de middleware , toutes les verfications ne sont pas effectué.
+Nous avons choisis d'utilisé l'api strongloop pour avoir la possibilité d'avoir un écran d'observation (CPU,Temps de requête)
+et pour obtenir une api facilement utilisable par les devs pour les tests 

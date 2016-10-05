@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.app.android.yagthu.widgets.CategoryPreferencesWidget
+        android:title="@string/preferences_title_archives"
+        android:key="prefs_key_documents_settings">
+
+        <com.app.android.yagthu.widgets.CheckBoxPreferencesWidget
+            android:key="prefs_key_archive_documents_download"
+            android:title="@string/preferences_subtitle_archives"
+            android:summary="@string/preferences_content_archives"
+            android:defaultValue="false"
+            android:selectable="true"/>
+
+        <com.app.android.yagthu.widgets.InformationPreferencesWidget
+            android:key="prefs_key_archive_documents_path"
+            android:title="@string/preferences_subtitle_archives_path"
+            android:summary="@string/preferences_content_archives_path"/>
+
+    </com.app.android.yagthu.widgets.CategoryPreferencesWidget>
+
+    <com.app.android.yagthu.widgets.CategoryPreferencesWidget
+        android:title="@string/preferences_title_info"
+        android:key="prefs_key_infos_settings">
+
+        <com.app.android.yagthu.widgets.InformationPreferencesWidget
+            android:key="prefs_key_info_about"
+            android:title="@string/preferences_subtitle_about"
+            android:summary="@string/preferences_content_about"
+            android:selectable="true"/>
+
+        <com.app.android.yagthu.widgets.InformationPreferencesWidget
+            android:key="prefs_key_info_version"
+            android:title="@string/preferences_subtitle_info_version"
+            android:summary="@string/preferences_subtitle_info_version"/>
+
+    </com.app.android.yagthu.widgets.CategoryPreferencesWidget>
+
+</PreferenceScreen>

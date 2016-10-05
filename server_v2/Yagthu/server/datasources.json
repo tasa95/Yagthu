@@ -1,0 +1,25 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb_dev": {
+    "url": "mongodb://app:Sensei@ds045252.mongolab.com:45252/heroku_k3dlxw6v",
+    "database": "devDB",
+    "name": "mongodb_dev",
+    "connector": "mongodb"
+  },
+  "mongodb_staging": {
+    "url": "mongodb://app:Sensei@ds045252.mongolab.com:45252/heroku_k3dlxw6v",
+    "database": "stagingDB",
+    "name": "mongodb_staging",
+    "connector": "mongodb"
+  },
+  "amazon": {
+    "name": "amazon",
+    "connector": "loopback-component-storage",
+    "provider": "amazon",
+    "key": "PKN/HqfX1pTcEzSx+0pqGESwDbXHygi4PvIEd++0",
+    "keyId": "AKIAJYTA7YELWIEHOCYQ"
+  }
+}

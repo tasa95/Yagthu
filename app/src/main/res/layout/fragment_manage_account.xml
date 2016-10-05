@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:clickable="true"
+        android:padding="15dip"
+        android:orientation="vertical"
+        android:background="@color/background">
+
+        <!-- Title section: Account connection -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingBottom="10dip"
+                android:textSize="18dip" android:textColor="@color/blue" android:textStyle="bold"
+                android:text="@string/account_section_login"
+                android:gravity="center_vertical" />
+
+            <View
+                android:layout_width="match_parent" android:layout_height="1dip"
+                android:layout_marginBottom="15dip"
+                android:background="@color/blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dip" android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:orientation="vertical">
+
+                <!-- Avatar -->
+                <ImageView
+                    android:id="@+id/account_user_avatar"
+                    android:layout_width="80dip" android:layout_height="80dip"
+                    android:layout_gravity="left|top"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/content_description_user_avatar"/>
+
+                <!-- Statut de l'avatar -->
+                <TextView
+                    android:id="@+id/account_user_avatar_status"
+                    android:layout_width="80dip" android:layout_height="wrap_content"
+                    android:gravity="top|center_horizontal"
+                    android:paddingTop="5dip"
+                    android:textColor="@color/grey" android:textSize="12sp"
+                    android:ellipsize="end" android:maxLines="2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip" android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:orientation="vertical">
+
+                <!-- ID login -->
+                <TextView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_login"
+                    android:ellipsize="end" android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/user_account_login"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dip"
+                    android:textColor="@color/blue" android:textSize="16sp"
+                    android:textColorHint="@color/grey" android:hint="Login"
+                    android:enabled="false"/>
+
+                <!-- Email -->
+                <TextView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_email"
+                    android:ellipsize="end" android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/user_account_email"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dip"
+                    android:textColor="@color/blue" android:textSize="16sp" android:inputType="textEmailAddress"
+                    android:textColorHint="@color/dark" android:hint="Adresse mail"/>
+
+                <!-- Password -->
+                <TextView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_password"
+                    android:ellipsize="end" android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/user_account_password"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginBottom="35dip"
+                    android:textColor="@color/blue" android:textSize="16sp" android:inputType="textPassword|textNoSuggestions"
+                    android:textColorHint="@color/dark" android:hint="**********"/>
+
+            </LinearLayout>
+
+         </LinearLayout>
+
+        <!-- Title section: Personal informations -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingBottom="10dip"
+                android:textSize="18dip" android:textColor="@color/blue" android:textStyle="bold"
+                android:text="@string/account_section_personal"
+                android:gravity="center_vertical" />
+
+            <View
+                android:layout_width="match_parent" android:layout_height="1dip"
+                android:layout_marginBottom="15dip"
+                android:background="@color/blue" />
+
+        </LinearLayout>
+
+        <!-- ID student -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_id_student"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_id_student"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/grey" android:hint="2014-ESGI-146623" android:textAllCaps="true"
+            android:enabled="false"/>
+
+        <!-- Title (Mr, Ms) -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_title"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_title"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/dark" android:hint="M."/>
+
+        <!-- Firstname -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_firstname"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_firstname"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/grey" android:hint="Prénom"
+            android:enabled="false"/>
+
+        <!-- Lastname -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_lastname"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_lastname"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/grey" android:hint="Nom"
+            android:enabled="false"/>
+
+        <!-- Date de naissance -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_birth_date"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_birth_date"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/grey" android:hint="02/02/1989"
+            android:enabled="false"/>
+
+        <!-- Nationalité -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_nationality"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_nationality"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/dark" android:hint="Française"/>
+
+        <!-- Ville de naissance -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_birth_city"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_birth_city"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/dark" android:hint="Paris"/>
+
+        <!-- Pays de naissance -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_birth_country"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_birth_country"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/dark" android:hint="France"/>
+
+        <!-- Adresse -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_address"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_address"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/dark" android:hint="2 rue Moufftard"/>
+
+        <!-- Adresse suite (optionnel) -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_address_2"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_address_2"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/dark" android:hint=""/>
+
+        <!-- Ville -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_city"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_city"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/dark" android:hint="Paris"/>
+
+        <!-- Code postal -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_zip_code"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_zip_code"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp" android:inputType="number"
+            android:textColorHint="@color/dark" android:hint="75001"/>
+
+        <!-- Pays -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_country"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_country"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/dark" android:hint="France"/>
+
+        <!-- Téléphone fixe (optionnel) -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_phone_number"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_phone_number"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp" android:inputType="number"
+            android:textColorHint="@color/dark" android:hint=""/>
+
+        <!-- Portable (optionnel) -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_cellphone_number"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_cellphone_number"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textColor="@color/blue" android:textSize="16sp" android:inputType="number"
+            android:textColorHint="@color/dark" android:hint="0000000000"/>
+
+        <!-- Numéro INE (optionnel) -->
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/grey" android:textSize="16sp" android:text="@string/account_ine_number"
+            android:ellipsize="end" android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/user_account_ine_number"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="35dip"
+            android:textColor="@color/blue" android:textSize="16sp"
+            android:textColorHint="@color/dark" android:hint=""/>
+
+    </LinearLayout>
+
+</ScrollView>

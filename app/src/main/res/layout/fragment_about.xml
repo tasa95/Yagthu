@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:padding="20dip"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/about_introduction"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/dark" android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingLeft="40dip" android:paddingRight="40dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dip" android:layout_height="60dip"
+                android:layout_marginRight="30dip"
+                android:src="@drawable/logo_ges"
+                android:contentDescription="@string/content_description_ges"/>
+
+            <ImageView
+                android:layout_width="70dip" android:layout_height="70dip"
+                android:src="@drawable/logo_esgi"
+                android:contentDescription="@string/content_description_esgi"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/about_how_it_works"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="35dip"
+            android:textColor="@color/dark" android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/about_why"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:textColor="@color/dark" android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/about_team"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="20dip" android:layout_marginBottom="20dip"
+            android:textColor="@color/dark" android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
